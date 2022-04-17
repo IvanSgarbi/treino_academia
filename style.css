@@ -1,0 +1,66 @@
+body{
+    max-width: 320px;
+    margin: auto;
+    font-family: 'Comic Sans MS';
+}
+.days h1{
+    text-align: center;
+}
+.days-container{
+    display: flex;
+}
+.day-selector{
+    display: flex;
+    width: 30%;
+    height: 70px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    margin: 15px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.training-content{
+    background-color: #DDDDDD;
+}
+.muscle-title{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    
+}
+.exe{
+    text-align: center;
+}
+.exe .exe-name{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.rep{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+.rep div{
+    display: flex;
+    margin: auto;
+}
+.exe img{
+    margin: auto;
+}
+.muscle{
+    transition: max-height 1s;
+}
+.close{
+    max-height: 0px;
+    overflow-y: hidden;
+}
+.open{
+    max-height: 500px;
+    overflow-y: scroll;
+}

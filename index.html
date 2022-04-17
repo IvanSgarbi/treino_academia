@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Treino</title>
+</head>
+
+<body>
+    <div id="main" class="main">
+        <div class="days">
+            <h1>Selecione o dia de treinamento:</h1>
+            <div class="days-container">
+                <div class="day-selector" v-bind:day="index" v-for="(day,index) in dados.dias">
+                    {{index+1}}
+                </div>
+            </div>
+        </div>
+
+        <div class="training-content">
+            <template v-if="selectedDay">
+                <template v-for="muscle in dados.dias[selectedDay]">
+                    <div class="muscle-title" v-bind:muscle="muscle.musculo">
+                        Músculo:{{muscle.musculo}}
+                    </div>
+                    <div class="muscle close" v-bind:id="muscle.musculo">
+                        <div class="exe" v-for="exe in muscle.exercicios">
+                            <div class="exe-name">{{exe.nome}}</div>
+                            <div class="rep">
+                                <template v-for="rep in exe.repetições">
+                                    <div>{{rep}}</div>
+                                </template>
+                            </div>
+                            <img v-bind:src="'img/' + exe.nome + '.jpg'" width="200" />
+                        </div>
+                    </div>
+                </template>
+                <div></div>
+            </template>
+        </div>
+    </div>
+    <script src="src/dados.js"></script>
+    <script src="src/vue.min.js"></script>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
