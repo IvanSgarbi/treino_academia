@@ -64,7 +64,9 @@ var dados = {
                             ]
                         }
                     ]
-                },
+                }
+            ],
+            [
                 {
                     "musculo": "Posterior",
                     "imagem": null,
@@ -87,9 +89,7 @@ var dados = {
                             ]
                         }
                     ]
-                }
-            ],
-            [
+                },
                 {
                     "musculo": "Costas",
                     "imagem": null,
@@ -128,7 +128,9 @@ var dados = {
                             ]
                         }
                     ]
-                },
+                }
+            ],
+            [
                 {
                     "musculo": "Bíceps",
                     "imagem": null,
@@ -199,7 +201,9 @@ var dados = {
                             ]
                         }
                     ]
-                },
+                }
+            ],
+            [
                 {
                     "musculo": "Quadríceps",
                     "imagem": null,
